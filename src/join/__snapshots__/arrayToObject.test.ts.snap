@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`arrayToObject function renders all possible objects correctly 1`] = `
+[
+  {
+    "D": true,
+    "active": true,
+    "event": true,
+    "ongoing": true,
+    "private": true,
+    "punctual": true,
+    "user": true,
+  },
+  {
+    "S": true,
+    "admin": true,
+    "archive": true,
+    "class": true,
+    "done": true,
+    "overdue": true,
+    "public": true,
+  },
+]
+`;
