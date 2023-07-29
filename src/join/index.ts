@@ -1,9 +1,10 @@
-export default function joinMore(array: Array<string>, divider = "_") {
-  const result = [];
-  for (let i = 0; i < array.length; i++) {
-    for (let j = i + 1; j < array.length + 1; j++) {
-      result.push(array.slice(i, j).join(divider));
-    }
-  }
-  return result;
-}
+import { arrayToObject } from "./arrayToObject";
+import { joinStrings } from "./joinStrings";
+
+export * from "./joinStrings";
+export * from "./arrayToObject";
+
+export const join = <T extends any[], D extends string>(
+  source: T,
+  divider: D
+) => arrayToObject(joinStrings(source, divider));
